@@ -1,0 +1,268 @@
+// variables
+$brand: #823acc
+
+// blocks
+.container
+    width: 1550px
+    padding: 0 15px
+    padding-left: 40px !important
+    margin: 0 auto
+    box-sizing: border-box
+
+// spoilers
+.spoiler
+    &__header
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        cursor: pointer
+    &__img
+        width: 35px
+        height: auto
+    &__title
+        font-size: 20px
+        color: $brand
+        text-decoration: underline
+        margin: 0
+    &__content
+        display: none
+    &__text
+        span
+            display: block
+            margin: 10px 0
+
+// slider settings
+.slick-dots
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    margin-bottom: 0
+    margin-top: 15px
+    cursor: pointer
+    li
+    
+      button
+          font-size: 0
+          padding: 0
+          margin: 0 5px
+          width: 10px
+          height: 10px
+          border-radius: 10px  
+          border: none
+          background: #dfdfdf
+          transition: .2s
+    .slick-active
+        button
+            background: $brand
+
+// titles and descriptions
+body, h1, h2, h3, h4, h5, h6, p, span, div, input, textarea
+    font-family: 'calibri', 'sans-serif'
+
+.h36 .h30, .h26, .h24, .h22 
+    font-family: 'calibri', 'sans-serif'
+
+.h60
+    font-family: 'gothampro', 'calibri', 'sans-serif'
+    font-size: 60px
+    text-align: center
+    margin: 0
+    text-transform: uppercase
+.h36
+    font-size: 36px
+.h30
+    font-size: 30px
+.h26
+    font-size: 26px
+.h24
+    font-size: 24px
+.h22
+    font-size: 22px
+
+// buttons
+.but-1, .but-2, .but-3
+    display: block
+    font-family: 'calibri', 'sans-serif'
+    color: #fff
+    background: none
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 600
+    cursor: pointer
+    width: fit-content
+    margin: 0
+    transition: .2s
+
+.but-1
+    padding: 15px 25px
+    font-size: 17px
+    border: 2px solid $brand
+    border-radius: 25px
+    &:hover
+        background: $brand
+
+.but-2
+    padding: 15px 65px
+    border-radius: 30px
+    border: 2px solid #fff
+    font-size: 24px
+    &:hover
+        background: #fff
+        color: $brand
+
+.but-3
+    color: $brand
+    padding: 15px 30px
+    font-size: 17px
+    border-radius: 25px
+    border: 2px solid $brand
+    &:hover
+        color: #fff
+        background: $brand
+
+// inputs
+.inp-1
+    display: block
+    max-width: 370px
+    width: 100%
+    height: 50px
+    
+    background-size: 26px 25px
+    background-color: #fff !important
+    background-position-x: 20px !important
+    border-radius: 25px
+    border: none
+    padding-left: 60px
+    box-sizing: border-box
+    font-size: 20px
+    outline: none
+    &::placeholder
+        color: #000
+
+@media screen and ( max-width: 1600px)
+    // blocks
+    .container  
+        width: 1350px
+
+@media screen and ( max-width: 1400px)
+    // blocks
+    .container  
+        width: 1150px
+
+    .h60
+        font-size: 52px
+    .h36
+        font-size: 30px
+    .h30
+        font-size: 28px
+    .h26
+        font-size: 24px
+    .h24
+        font-size: 22px
+    .h22
+        font-size: 20px
+            
+@media screen and ( max-width: 1200px)
+    // blocks
+    .container  
+        width: 950px
+        padding: 0 10px
+
+    // titles and descriptions
+    .h60
+        font-size: 45px
+    .h36
+        font-size: 28px
+    .h30
+        font-size: 26px
+    .h26
+        font-size: 22px
+    .h24
+        font-size: 20px
+    .h22
+        font-size: 18px
+
+    // buttons
+    .but-1, .but-2, .but-3
+        font-size: 16px
+
+    // inputs
+    .inp-1
+        font-size: 16px
+
+@media screen and ( max-width: 990px)
+    // blocks
+    .container  
+        width: 730px
+
+    // titles and descriptions
+    .h60
+        font-size: 40px
+    .h36
+        font-size: 24px
+    .h30
+        font-size: 22px
+    .h26
+        font-size: 20px
+    .h24
+        font-size: 18px
+    .h22
+        font-size: 16px
+        
+
+@media screen and ( max-width: 768px)
+    // blocks
+    .container  
+        width: 535px
+        padding-left: 30px !important
+
+    // spoilers
+    .spoiler
+        &__title
+            font-size: 14px
+            padding-left: 10px
+        &__img
+            width: 20px
+
+    // titles and descriptions
+    .h60
+        font-size: 35px
+    .h36
+        font-size: 22px
+    .h30
+        font-size: 20px
+    .h26
+        font-size: 18px
+    .h24
+        font-size: 16px
+    .h22
+        font-size: 14px
+
+@media screen and ( max-width: 575px)
+    // blocks
+    .container  
+        width: calc(100% - 20px)
+
+    // titles and descriptions
+    .h60
+        font-size: 28px
+    .h36
+        font-size: 20px
+    .h30
+        font-size: 18px
+    .h26
+        font-size: 16px
+    .h24
+        font-size: 14px
+    .h22
+        font-size: 14px
+
+    // buttons
+    .but-1, .but-2, .but-3
+        font-size: 14px
+
+    // inputs
+    .inp-1
+        font-size: 14px
+    
